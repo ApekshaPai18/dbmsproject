@@ -1,6 +1,6 @@
 <?php
 
-  include('customer.php');
+  include('_dbconnect.php');
   $customerid= $_POST['customerid'];
   $password= $_POST['password'];
 
@@ -18,6 +18,7 @@
         if($count == 1){  
             echo "<h1><center> Login successful </center></h1>"; 
             echo "<script> window.location.assign('page2.html'); </script>";
+            header(location: page2.html);
         }  
         else{  
             echo "<h1> Login failed. Invalid username or password.</h1>";  

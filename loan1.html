@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>loan</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+    <img class="bg" src="bank.jpg" alt="Bank">
+    <div class="navbar">
+        <a class="active" href="page2.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+    </div>
+
+
+    <ul class="breadcrumb justify-content-center">
+        <div data-role="page-header">
+            <div data-role="control" data-type="form-header" data-hash="00000002" data-type-id="27" data-colspan="20"
+                id="form-heading-00000002-acc" aria-labelledby="form-heading-00000002-acc" data-i18n-html="Headline">
+                <h1 style="text-align:center">Loan Application Form</h1>
+                <p style="text-align:justify">Please fill in all needed information in the loan application form below
+                    to request a loan from your organization. Information regarding income assets are requested for
+                    qualification.&nbsp;</p>
+                <hr>
+            </div>
+        </div>
+
+    </ul>
+    <div class="container2">
+ 
+
+   <form action="loan1.php" method="post">
+    <label for="name"><b>Name</b></label>
+   <input type="text" name="name" id="name" placeholder="enter your name">
+   <label for="number"><b>Account Number</b></label>
+   <input type="number" name="number" id="number" placeholder="account number">
+   <label for="number1"><b>Phone Number</b></label>
+   <input type="number" name="number1" id="number1" placeholder="phone number">
+   <label for="email"><b> Email</b></label>
+   
+   <input type="email" name="email" id="email" placeholder="enter your email">
+   <label for="address"><b>Address</b></label>
+   <input type="address" name="address" id="address" placeholder="address">
+   <label for="type"><b>Loan Type</b></label>
+   <input type="text" name="type" id="type" placeholder="loan type">
+   <label for="amount"><b>Amount</b></label>
+   <input type="number" name="amount" id="amount" placeholder="amount">
+   <label for="text"><b>Your Reason<b></label>
+   <input type="text" name="text" id="text" placeholder="reason">
+   
+   <button class="btn"><b>Submit</b></button>
+</form>
+</div>
+<script src="index.js"></script>

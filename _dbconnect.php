@@ -7,7 +7,7 @@ $password="";
 $database="dbms";
 
 $customerid=$_POST["customerid"];
-$password=$_POST["password"];
+$pasword=$_POST["password"];
 
 
 

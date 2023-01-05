@@ -86,7 +86,7 @@ if($insert==true){
 ?>
     <br><br><br><br>
 
-    <form action="customer.php" method="POST">
+    <form action="partials/_dbconnect.php" method="POST">
       
       <input type="number" name="customerid" id="number" placeholder="Customer id">
       
