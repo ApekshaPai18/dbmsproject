@@ -1,309 +1,293 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .container input{
-    display: block;
-    border: 2px solid black;
-    border-radius: 6px;
-    outline: none;
-    font-size: 15px;
-    width: 50%;
-    margin: 11px 0px;
-    padding: 7px;
+  display: block;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  width: 30%;
+  margin: 15px 0px;
+  padding: 10px;
 }
 
-.container form{
-  
 
-    display: flex;
-   margin-left: 15px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+
+.container form{
+
+
+  display: flex;
+  margin-left: 15px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
 }
 
 .bg{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+ 
 }
 
 .container h1{
-    text-align: center;
+  text-align: center;
 }
 
 .container h6{
-    text-align: left;
+  text-align: left;
 }
 h1{
-    font-size: 50px;
-    color: black;
-    text-shadow: 2px 2px 4px #000000;
-  
+  font-size: 50px;
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+
+
 }
 p{
-    font-size:19px;
-    text-align: center;
+  font-size:19px;
+  text-align: center;
+  color: #000000;
 }
 
 input, textarea{
-    display: block;
-    border: 2px solid black;
-    border-radius: 6px;
-    outline: none;
-    font-size: 15px;
-    width: 80%;
-    margin: 11px 0px;
-    padding: 7px;
+  display: block;
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  width: 80%;
+  margin: 11px 0px;
+  padding: 7px;
 }
 
 form{
 
-    display: flex;
-   margin-left: 15px;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+ margin-left: 15px;
+  justify-content: center;
+  flex-direction: column;
 }
 
-   
+ 
 .btn{
-    padding: 8px;
-    border-color: black;
-    background-color: aquamarine;
-    border-radius: 10px;
-    width:120px;
-    border: 2px solid black;
-    cursor: pointer;
-    margin: auto;
-    
+  padding: 8px;
+  border-color: black;
+  background-color: green;
+  border-radius: 10px;
+  width:120px;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: auto;
+  
 }
 
-.bg{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.3;
-}
- .SubmitMsg{
-    font-size: 30px;
-    color: green;
+
+
+.SubmitMsg{
+  font-size: 25px;
+  color: green;
 }
 
 
 .responsive{
-    width:40%;
-    height:auto;
-    max-width: 100px;
+  width:40%;
+  height:auto;
+  max-width: 100px;
 
 }
 
 .footer{
-    
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
+  
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.navbar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-  }
-  
-  .navbar a {
-    float: left;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .navbar a:hover {
-    background-color: #000;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
 
-  .card
-  {
-   padding-left: 10px;
-  }
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
+.active {
+  background-color: #04AA6D;
+}
+
+.card
+{
+ padding-left: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f1f1;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width: 30%;
-    padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 10px;}
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
-
-  .card h4{
-    color: #277e1e;
-  }
-
-  ul.breadcrumb {
-    padding: 20px 16px;
-    list-style: none;
-    background-color: #eee;
-  }
- 
-  
-  ul.breadcrumb h2{
-   text-align: center;
-  }
-
- 
-  
-  
- 
-
-  input, textarea,select {
-    display: block;
-    border: 2px solid black;
-    border-radius: 6px;
-    outline: none;
-    font-size: 15px;
     width: 100%;
-    margin: 11px 0px;
-    padding: 7px;
-    
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card h4{
+  color: #277e1e;
+}
+
+ul.breadcrumb {
+  padding: 20px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+
+ul.breadcrumb h2{
+ text-align: center;
+}
+
+input, textarea,select {
+  display: block;
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  margin: 11px 0px;
+  padding: 7px;
+  color: #000000;
+  
 }
 
 .btn1{
-    padding: 8px;
-    border-color: black;
-    background-color: aquamarine;
-    border-radius: 15px;
-    width:100px;
-    border: 2px solid black;
-    cursor: pointer;
-    margin: auto;
+  padding: 8px;
+  border-color: black;
+  background-color: green;
+  border-radius: 15px;
+  width:100px;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: auto;
 }
 
 .btn btn-primary{
-    padding: 8px;
-    border-color: black;
-    background-color: aquamarine;
-    border-radius: 15px;
-    width:100px;
-    border: 2px solid black;
-    cursor: pointer;
-    margin: auto;
+  padding: 8px;
+  border-color: black;
+  background-color:green;
+  border-radius: 15px;
+  width:100px;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: auto;
 }
 
 .submission h2{
-  color: #277e1e;
-  text-align: center;
+color: #277e1e;
+text-align: center;
 }
 .center {
-  text-align: center;
-  width: 100%;
-  color: #277e1e;
-  padding: 5px;
+text-align: center;
+width: 100%;
+color: #277e1e;
+padding: 5px;
 }
 
 .container-2 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
 }
 
 .container-2 li {
- margin-left:10px ;
+margin-left:10px ;
 }
 
 li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+background-color: red;
 }
 
 li.dropdown {
-  display: inline-block;
+display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
-  display: block;
+display: block;
 }
 
 button {
- border-radius: 5px;
-  color:green;
-  padding: 15px 32px;
-  text-align: center;
-  
- 
-  font-size: 18px;
-  margin: 2px 2px;
-  cursor: pointer;
-  width: 10%;
+border-radius: 5px;
+color:rgb(153, 132, 218);;
+padding: 15px 32px;
+text-align: center;
+font-size: 18px;
+margin: 2px 2px;
+cursor: pointer;
+width: 10%;
 }
+
+
+
+
+

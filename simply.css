@@ -1,0 +1,8 @@
+.breadcrumb-navigation > li {
+    display: inline;
+  }
+
+  .breadcrumb-navigation li + li:before {
+    padding: 4px;
+    content: "/";
+  }

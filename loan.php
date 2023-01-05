@@ -20,16 +20,19 @@ if(isset($_POST['name'])){
 
 
 //collect post variables
+   
     $name=$_POST['name'];
-    $number=$_POST['anumber'];
-    $pnum=$_POST['number'];
+    $number=$_POST['number'];
+    $pnum=$_POST['number1'];
     $email=$_POST['email'];
-    $address=$_POST['text'];
-    $type=$_POST['loan'];
-    $amount=$_POST['text'];
-    $reason=$_POST['desc'];
-    $sql="INSERT INTO `dbms`.`login` (`name`, `number`, `pnum`, `email`, `address`, `type`, `amount`, `reason`) 
-    VALUES ('$name', '$number', '$pnum', '$email', '$address,', '$type', '$amount', '$reason');";
+    $address=$_POST['address'];
+    $type=$_POST['type'];
+    $amount=$_POST['amount'];
+    $reason=$_POST['text'];
+    //$sql="INSERT INTO `dbms`.`log` (`name`, `number`, `pnum`, `email`, `address`, `type`, `amount`, `reason`) 
+   // VALUES ('$name', '$number', '$pnum', '$email', '$address,', '$type', '$amount', '$reason');";
+   $sql= "INSERT INTO `dbms`.`log` (`name`, `number`, `pnum`, `email`, `address`, `type`, `amount`, `reason`) 
+    VALUES ( '$name', '$number', '$pnum', '$email', '$address,', '$type', '$amount', '$reason');";
    // echo $sql;
 
 
@@ -51,6 +54,8 @@ if(isset($_POST['name'])){
     }
 ?>
 
+
+
 <!doctype html>
 <html lang="en">
 
@@ -65,11 +70,10 @@ if(isset($_POST['name'])){
 </head>
 
 
-    <img class="bg" src="bank.jpg" alt="Bank">
-    <div class="navbar">
-        <a class="active" href="page2.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <img class="bg" src="passbook1.png" alt="Bank" height="1000" width="1000">
+ 
 
-    </div>
+  
 
 
     <ul class="breadcrumb justify-content-center">
@@ -86,10 +90,17 @@ if(isset($_POST['name'])){
 
     </ul>
     <div class="container2">
-        <form>
+    <?php
+        if($insert==true){
+         echo  "<p class='SubmitMsg' >Your application has been submitted!!!</p>
+        <br><br>";
+        }
+      ?>
+       <form action="loan.php" method="POST">
             <table>
                 <tr>
                     <td>
+                        
                         <b>Name</b>
                     </td>
                     <td>
@@ -101,7 +112,7 @@ if(isset($_POST['name'])){
                         <b>Account Number</b>
                     </td>
                     <td>
-                        <input type="number" name="anumber" id="number" placeholder="AccNumber">
+                        <input type="number" name="number" id="number" placeholder="AccNumber">
                     </td>
                 </tr>
                
@@ -110,7 +121,7 @@ if(isset($_POST['name'])){
                         <b>Phone Number</b>
                     </td>
                     <td>
-                        <input type="number" name="number" id="number" placeholder="##########">
+                        <input type="number" name="number1" id="number" placeholder="##########">
                     </td>
                 </tr>
                 <tr>
@@ -127,15 +138,15 @@ if(isset($_POST['name'])){
                         <b>Address</b>
                     </td>
                     <td>
-                        <input type="text" name="text" id="text" placeholder="address">
+                        <input type="text" name="address" id="text" placeholder="address">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="loan"><b>Choose a loan type</b></label>
+                        <label for="type"><b>Choose a loan type</b></label>
                     </td>
                     <td>
-                        <select name="loan" id="loan">
+                        <select name="type" id="loan">
                             <option value="Education">Education</option>
                             <option value="Vehicle">Vehicle</option>
                             <option value="Agriculture">Agriculture</option>
@@ -150,7 +161,7 @@ if(isset($_POST['name'])){
                         <b>Desired loan amount</b>
                     </td>
                     <td>
-                        <input type="text" name="text" id="text" placeholder="amount">
+                        <input type="text" name="amount" id="text" placeholder="amount">
                     </td>
                 </tr>
                 <td>
@@ -158,20 +169,17 @@ if(isset($_POST['name'])){
                 </td>
                 <td>
                    
-                    <textarea name="desc" id="desc" cols="30" rows="10"
+                    <textarea name="text" id="desc" cols="30" rows="10"
                     placeholder="Enter your reason"></textarea>
                 </td>
             </tr>
-               
-
-
             
-            </table>
+        </table>
             <div class="center">
-            <button type="button" onclick="alert('submitted successfully')">submit!</button>
-        </div>
+            <button class="btn"><b>Submit</b></button>
+</form>
 
-        </form>
+       
 </body>
 
 </html>
