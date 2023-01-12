@@ -26,8 +26,10 @@ if(isset($_POST['customerid'])){
     
     //$sql="INSERT INTO `dbms`.`log` (`loan_id`,`name`, `number`, `pnum`, `email`, `address`, `type`, `amount`, `reason`) 
    // VALUES ('$name', '$number', '$pnum', '$email', '$address,', '$type', '$amount', '$reason');";
-   $sql1= "INSERT INTO `dbms`.`customerlogin` (`customerid`, `password`) 
-    VALUES ( '$customerid', '$password');";
+  // $sql1= "INSERT INTO `dbms`.`customerlogin` (`customerid`, `password`) 
+   // VALUES ( '$customerid', '$password');";
+    $sql1="INSERT INTO `dbms`.`customerlogin` ( `customerid`, `password`, `dt`) 
+    VALUES ( '$customerid', '$password', current_timestamp());";
     $sql2= "INSERT INTO `dbms`.`customer` (`customerid`, `password`) 
     VALUES ( '$customerid', '$password');";
    // echo $sql;
