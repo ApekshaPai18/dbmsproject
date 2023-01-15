@@ -20,9 +20,9 @@
 
 
  
-//$sql=mysqli_query($con,"CALL artproc()");
- $sql="select * from `log`";
- $data=mysqli_query($con,$sql);
+$sql=mysqli_query($con,"CALL loanapp()");
+ //$sql="select * from `log`";
+// $data=mysqli_query($con,$sql);
 
 
  //find the number of records returned
@@ -64,7 +64,7 @@
 
 
 <?php
-while($row=mysqli_fetch_assoc($data)){
+while($row=mysqli_fetch_assoc($sql)){
    // echo var_dump($row);
 ?>
 

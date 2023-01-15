@@ -8,7 +8,7 @@
         $password = stripcslashes($password);  
        // $email = mysqli_real_escape_string($con, $email);  
         //$password = mysqli_real_escape_string($con, $password);  
-      
+      //$sql="call mgrproc('$managerid','$password')";
         $sql = "select *from manager where managerid = '$managerid' and password = '$password'";  
         $result = mysqli_query($con, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
