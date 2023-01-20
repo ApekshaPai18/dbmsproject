@@ -78,10 +78,10 @@ if(isset($_POST['customerid'])){
 
 <div class="register">
    <br><h2><b>LOGIN</b></h2>
-   <form action="customer.php" id="register" method="POST">
+   <form action="index.php" id="register" method="POST">
        <label><b>Customerid:</b></label>
        <br>
-       <input type="number" name="customerid" id="number" placeholder="Customerid">
+       <input type="text" name="customerid" id="number" placeholder="Customerid">
        <br><br>
 
        <label><b>password:</b></label>
